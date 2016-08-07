@@ -1,0 +1,53 @@
+$tablet-width: "only screen and (max-width: 768px)"
+$mobile-width: "only screen and (max-width: 425px)"
+
+@mixin tablet()
+	@media #{$tablet-width}
+		@content
+@mixin mobile()
+	@media #{$mobile-width}
+		@content
+
+/* TABLET WIDTH */
+@include tablet
+	#header
+		height: 700px
+	.menu
+		display: none
+	.menu-hide
+		display: block
+		margin-right: 6em
+		ul
+			display: none
+		&:hover
+			ul
+				width: 100%
+				position: absolute
+				top: 70px
+				left: 0
+				text-align: center
+				display: flex
+				height: 50px
+				li
+					background: black
+					opacity: 0.8
+					padding: 1px
+					&:first-child
+						margin: 0
+					a
+						padding: 1.5em 3.9em
+						display: inline-block
+						color: white
+						text-transform: uppercase
+						font:
+							family: 'Alegreya'
+							size: 12px
+						letter-spacing: 0.1em
+						transition: color 400ms
+						&:hover
+							border-bottom: solid 2px #FF5D00
+							color: #FF5D00
+	.header-content
+		width: 500px
+		h1
+			font-size: 50px
