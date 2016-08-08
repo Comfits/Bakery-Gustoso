@@ -16,10 +16,13 @@ $mobile-width: "only screen and (max-width: 425px)"
 		display: none
 	.menu-hide
 		display: block
-		margin-right: 6em
+		cursor: pointer
+		height: 50px
 		ul
 			display: none
 		&:hover
+			.icon-menu
+				color: #FF5D00
 			ul
 				width: 100%
 				position: absolute
@@ -27,16 +30,18 @@ $mobile-width: "only screen and (max-width: 425px)"
 				left: 0
 				text-align: center
 				display: flex
-				height: 50px
+				
 				li
 					background: black
 					opacity: 0.8
 					padding: 1px
+					width: 20%
+					line-height: 2em
 					&:first-child
 						margin: 0
 					a
-						padding: 1.5em 3.9em
-						display: inline-block
+						padding: 0.5em 0
+
 						color: white
 						text-transform: uppercase
 						font:
@@ -48,6 +53,6 @@ $mobile-width: "only screen and (max-width: 425px)"
 							border-bottom: solid 2px #FF5D00
 							color: #FF5D00
 	.header-content
-		width: 500px
+		width: 70%
 		h1
 			font-size: 50px
