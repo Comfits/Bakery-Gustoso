@@ -28,15 +28,15 @@ ul
 	background: #56534c
 	opacity: 0.5
 	z-index: 10000
-	#navbar
-		display: flex
-		justify-content: space-around
-		h1
-			font:
-				family: 'Scriptina'
-				size: 200%
-			color: white
-			padding-top: 10px
+.navbar
+	display: flex
+	justify-content: space-around
+	h1
+		font:
+			family: 'Scriptina'
+			size: 200%
+		color: white
+		padding-top: 10px
 .menu-hide
 	display: none
 	.icon-menu
@@ -145,7 +145,7 @@ ul
 		h1
 			font-size: 2em
 .para
-	margin: 40px 0
+	margin: 20px 0
 	font:
 		family: $font-p
 		size: 14px
@@ -195,7 +195,7 @@ ul
 /* CONTENT-IMAGE */
 .content-image
 	width: 50%
-	padding: 7em 0.5em 4em 0.5em
+	margin: 10% .5em
 .wrap-image
 	height: 500px
 	text-align: center
@@ -222,13 +222,13 @@ ul
 	background: url('../img/Ebene-11.jpg')
 	background-position: center
 	background-size: cover
-	height: 760px
-	position: relative
+	height: 700px
+	text-align: center
 .food-widget
 	height: 512px
-	position: absolute
-	top: 20%
-	left: 10%
+	max-width: 1000px
+	margin-top: 5%
+	display: inline-block
 .food-image
 	width: 35%
 	height: inherit
@@ -285,27 +285,28 @@ ul
 	background-size: cover
 	background-position: center
 	height: 760px
-.wrap-content
-	padding: 0 10%
-	.content-text
-		h1
-			font-size: 60px
-			margin-top: 1.5em
-		h1,h2
-			color: white
-		h2,h3
-			font:
-				size: 1.5em
-				weight: 600
-			margin: .5em 0 1em
-		p
-			color: grey
-			margin-bottom: 2em
+.text-color
+	color: white
+.content-text
+	h1
+		font-size: 60px
+		margin-top: .5em
+	h2,h3
+		font:
+			size: 1.5em
+			weight: 600
+		margin: .5em 0 2em
+	h2
+		margin-bottom: .5em
+	p
+		color: grey
+		margin-bottom: 2em
 .content-right
 	background-color: #d7d5ca
 	text-align: center
 	padding: 0 2em
 	height: inherit
+	max-width: 500px
 	h1
 		padding: 2em 0 1em
 .button-1
@@ -315,3 +316,105 @@ ul
 	color: $font-color-organe
 	font-weight: 600
 	margin-bottom: 2em
+
+/* CONTENT-4 */
+.wrap-content
+	width: 80%
+	margin: auto
+#content-4
+	text-align: center
+	background-color: #f3f1e9
+	header
+		background: url('../img/Vektor-Smartobjekt1.png')
+		background-repeat: no-repeat
+		margin: auto
+		width: 700px
+		height: 130px
+		position: relative
+		h1,h3
+			position: absolute
+			top: 50%
+			left: 10%
+		h3
+			top: 100%
+			left: 25%
+			padding-top: 1em
+			font-weight: 700
+.per-3
+	width: 30%
+	img
+		width: 108px
+		height: 102px
+		border-radius: 50%
+	h3
+		text-transform: none
+
+.pad-img
+	padding-left: 2em
+	width: 70%
+.thumbnail
+	padding: 1em
+	background: ghostwhite
+	position: relative
+	box-shadow: 0 14px 15px -5px #d7d5ca
+	img
+		display: inline-block
+		width: 100%
+.info
+	position: absolute
+	right: 1em
+	top: -1em
+	width: 30%
+	box-shadow: 0 14px 15px -5px #d7d5ca
+.recipe-info
+	height: 20%
+	background-color: white
+	opacity: .7
+	>h1
+		margin-top: .1em
+	>h3
+		padding-top: 1em
+		margin: .1em 0
+		font-weight: 700
+	.text-bold
+		color: $font-color-organe
+		font-size: 5em
+		margin-top: .1em
+	>p
+		margin: .5em 0
+.last-info
+	opacity: 1
+	background-image: url('../img/Vektor-Smartobjekt2.png')
+	>h3
+		margin: 0
+.recipe-btn
+	position: absolute
+	bottom: -20px
+	left: -20px
+	border: dotted 1px $font-color-organe
+	background-color: white
+	a
+		color: $font-color-organe
+		font-weight: 700
+		letter-spacing: 1px
+		text-transform: uppercase
+		padding: 1em 1.5em
+		display: inline-block
+		&:hover
+			box-shadow: 0 10px 15px -1px #d7d5ca
+
+.nav-footer
+	height: 100px
+	border-top: solid 1px black
+	padding-top: 5%
+.menu-footer
+	height: 70px
+	background-color: #eeece1
+	border-top: solid 1px #c2beba
+	border-bottom: solid 1px #c2beba
+	li
+		color: #56534c
+		a
+			color: #56534c
+			&:after
+				padding-right: 1em
